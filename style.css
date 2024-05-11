@@ -1,0 +1,193 @@
+/* Google Fonts (Inter) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* Navbar */
+body {
+    background-color: #3e4444;
+    font-family: 'Inter', sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #3e4444;
+}
+
+.navbar-brand {
+    margin-left: 50px;
+    font-weight: 700;
+}
+
+.navbar-nav {
+    margin-right: 50px;
+}
+
+.nav-item {
+    padding-left: 10px;
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+/* Headings styles */
+.thin-and-small {
+    font-family: 'Inter', sans-serif;
+    font-weight: 300; 
+    font-size: 1.5rem; 
+    text-align: left;
+}
+
+.thick-and-same-size {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; 
+    font-size: 2.5rem; 
+    text-align: left;
+}
+
+/* Top */
+#Top {
+    text-align: center;
+}
+
+.Top-button {
+    margin: 3%;
+}
+
+/* Footer */
+#footer {
+    text-align: center;
+    padding: 7% 15%;
+    margin-left: 3%;
+}
+
+
+/* Hero section */
+.hero-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.hero-text {
+    padding: 0 2rem;
+    margin-left: 50px;
+}
+
+.hero-image {
+    padding: 0 2rem;
+}
+
+/* About us section */
+.about-us {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about-us .col-md-3 {
+    flex: 0 0 calc(33.333% - 20px); /* Adjusted width */
+    max-width: calc(33.333% - 20px); /* Adjusted width */
+    margin: 0 10px 20px; /* Adjusted margin */
+}
+
+.about-us h2 {
+    width: 100%;
+    text-align: center;
+}
+
+.about-us p {
+    font-size: 1rem;
+}
+
+/* Other sections */
+.scope,
+.important-dates,
+.call-for-papers {
+    padding: 2rem 0;
+}
+
+/* Container */
+.container-fluid {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+/* Inter font class */
+.inter {
+    font-family: 'Inter', sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+        "slnt" 0;
+}
+
+.card-body {
+    width: 400px;
+}
+
+@media (max-width: 575px) {
+    .about-us .col-md-3 {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-fluid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero-text{
+        margin-left: 0;
+    }
+
+    .hero-image img {
+        max-width: 30%; 
+        height: auto;
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-brand {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .hero-text{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .navbar-brand {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    
+    .hero-text{
+    margin-left: 0;
+    }
+}
+
+/* Add this CSS to your existing CSS file */
+.no-margin-right {
+    margin-right: 0;
+  }
+  
+  @media (max-width: 991px) {
+    .no-margin-right {
+      margin-right: 15px; /* Adjust as needed */
+    }
+  }
+  
