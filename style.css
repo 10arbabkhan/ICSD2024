@@ -8,10 +8,15 @@ body {
 }
 
 .navbar {
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0); 
     color: #3e4444;
+    height: 113px;
 }
 
+
+.logo{
+    height: 5rem;
+}
 .navbar-brand {
     margin-left: 50px;
     font-weight: 700;
@@ -24,6 +29,38 @@ body {
 .nav-item {
     padding-left: 10px;
 }
+
+.paper {
+    /* position: absolute;  */
+    /* Use 'position: absolute' or 'position: fixed' */
+    top: 9.5px; /* Adjust the top position */
+    left: 472px; /* Adjust the left position */
+    width: 150px; /* Set the width */
+    height: 45px; /* Set the height */
+    background-color: #279E27;
+    border-radius: 8px;
+    padding: 4px;
+    margin-left: 5px;
+    margin-top: -3px;
+  }
+
+  .paper a {
+    color: #ffffff;
+  }
+
+/* Hover effect ______ under nav */
+.nav-item:not(.paper):hover {
+    font-weight: bold;
+  }
+  
+  .nav-item:not(.paper):hover .nav-link::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px; /* Adjust the height of the line as needed */
+    background-color: #279E27; /* Green color */
+    margin-top: 5px; /* Adjust the spacing between the text and the line */
+  }
 
 /* Headings */
 h1,
@@ -88,24 +125,39 @@ h6 {
 /* About us section */
 .about-us {
     padding: 2rem 0;
-    display: flex;
-    justify-content: center;
-}
-
-.about-us .col-md-3 {
-    flex: 0 0 calc(33.333% - 20px); /* Adjusted width */
-    max-width: calc(33.333% - 20px); /* Adjusted width */
-    margin: 0 10px 20px; /* Adjusted margin */
-}
-
-.about-us h2 {
-    width: 100%;
-    text-align: center;
-}
-
-.about-us p {
-    font-size: 1rem;
-}
+  }
+  
+  .about-us .card {
+    margin-bottom: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: calc(100% + 5px); /* Increase card width by 5px */
+  }
+  
+  .about-us .card-body {
+    text-align: justify;
+    padding: 2rem 3rem 2rem 2rem; /* Add more padding on the right */
+  }
+  
+  .about-us .container {
+    max-width: 100%;
+    padding: 0;
+  }
+  
+  .about-us .row {
+    margin: 0 -2.5px; /* Negative margin to compensate for column padding */
+  }
+  
+  .about-us .col-md-3 {
+    padding: 0 2.5px; /* Add padding to columns */
+    margin-left: 2rem;
+  }
+  
+  .about-us .col-md-3:nth-child(2) .card {
+    height: calc(100% - 10px); /* Adjust the height of the center card */
+  }
+  
 
 /* Other sections */
 .scope,
@@ -133,6 +185,14 @@ h6 {
     width: 400px;
 }
 
+.cdb1{
+    margin-left: 22%;
+}
+
+.cdb2{
+    padding-left: 5%;
+}
+
 @media (max-width: 575px) {
     .about-us .col-md-3 {
         width: 100%;
@@ -156,6 +216,10 @@ h6 {
     .hero-image img {
         max-width: 30%; 
         height: auto;
+    }
+
+    .logo{
+        height: 3rem;
     }
 }
 
@@ -191,3 +255,36 @@ h6 {
     }
   }
   
+  @media (max-width: 767px) {
+    .about-us .col-md-3 {
+      flex: 0 0 100%;
+      max-width: 92%;
+      padding: 0; /* Reset column padding on smaller screens */
+    }
+  
+    .about-us .col-md-3:nth-child(2) .card {
+      height: auto;
+    }
+  }
+
+
+/* Important dates */
+.important-dates{
+    background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0)),url('pawel-czerwinski-cx90ak4WBFQ-unsplash.svg');
+}
+
+.registerClick{
+    margin-top: 1rem;
+}
+
+.qrCode, .accDet{
+    padding: 1rem;
+}
+
+#zero{
+    color: red
+}
+
+.registration-details .col-md-7 {
+    margin-right: 8%; /* Add a margin to create a gap */
+}
