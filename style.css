@@ -1,22 +1,21 @@
 /* Google Fonts (Inter) */
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-/* Navbar */
 body {
     background-color: #3e4444;
     font-family: 'Inter', sans-serif;
 }
 
+/* Navbar */
 .navbar {
-    background-color: rgba(255, 255, 255, 0); 
+    background-color: rgba(255, 255, 255, 0);
     color: #3e4444;
-    height: 113px;
 }
 
-
-.logo{
-    height: 5rem;
+.logo {
+    height: 4rem;
 }
+
 .navbar-brand {
     margin-left: 50px;
     font-weight: 700;
@@ -30,37 +29,45 @@ body {
     padding-left: 10px;
 }
 
+
 .paper {
     /* position: absolute;  */
     /* Use 'position: absolute' or 'position: fixed' */
-    top: 9.5px; /* Adjust the top position */
-    left: 472px; /* Adjust the left position */
-    width: 150px; /* Set the width */
-    height: 45px; /* Set the height */
+    top: 9.5px;
+    /* Adjust the top position */
+    left: 472px;
+    /* Adjust the left position */
+    width: 150px;
+    /* Set the width */
+    height: 45px;
+    /* Set the height */
     background-color: #279E27;
     border-radius: 8px;
     padding: 4px;
     margin-left: 5px;
     margin-top: -3px;
-  }
+}
 
-  .paper a {
+.paper a {
     color: #ffffff;
-  }
+}
 
 /* Hover effect ______ under nav */
 .nav-item:not(.paper):hover {
     font-weight: bold;
-  }
-  
-  .nav-item:not(.paper):hover .nav-link::after {
+}
+
+.nav-item:not(.paper):hover .nav-link::after {
     content: "";
     display: block;
     width: 100%;
-    height: 3px; /* Adjust the height of the line as needed */
-    background-color: #279E27; /* Green color */
-    margin-top: 5px; /* Adjust the spacing between the text and the line */
-  }
+    height: 3px;
+    /* Adjust the height of the line as needed */
+    background-color: #279E27;
+    /* Green color */
+    margin-top: 5px;
+    /* Adjust the spacing between the text and the line */
+}
 
 /* Headings */
 h1,
@@ -73,20 +80,6 @@ h6 {
     text-align: center;
 }
 
-/* Headings styles */
-.thin-and-small {
-    font-family: 'Inter', sans-serif;
-    font-weight: 300; 
-    font-size: 1.5rem; 
-    text-align: left;
-}
-
-.thick-and-same-size {
-    font-family: 'Inter', sans-serif;
-    font-weight: 700; 
-    font-size: 2.5rem; 
-    text-align: left;
-}
 
 /* Top */
 #Top {
@@ -97,67 +90,126 @@ h6 {
     margin: 3%;
 }
 
+/* Hero section */
+.hero-section {
+    width: 92%;
+    min-height: 90vh;
+    /* top: 5%; */
+    left: 5%;
+    
+    display: flex;
+    align-items: center;
+    
+    justify-content: start;
+    /* padding: 2rem 0; */
+    position: relative;
+    /* height: 100vh; */
+    overflow: hidden;
+    /* padding-right: 5%; */
+}
+
+
+.hero-section .hero-image {
+    position: absolute;
+    object-fit: cover;
+    /* border-radius: 5rem; */
+    /* padding: 0 2rem; */
+    /* margin-left: 3%; */
+}
+
+.hero-section .hero-content {
+    /* 
+    text-align: center;
+    color: white;
+    
+    position: absolute;
+    margin-left: 10%; */
+    
+    /* top: 40%; */
+    /* left: 50%; */
+    margin-left: 2rem;
+    z-index: 1;
+    max-width: 40rem;
+    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.185); /* Adjust the alpha (transparency) value as needed */
+    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    padding: 20px;
+}
+
+
+/* hero Headings styles */
+.heroHead {
+    /* width: 50%; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+.heroHead2{
+    /* width: 50%; */
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    text-align: left;
+}
+
+
+
+
+
+
 /* Footer */
-#footer {
+/* #footer {
     text-align: center;
     padding: 7% 15%;
     margin-left: 3%;
-}
-
-
-/* Hero section */
-.hero-section {
-    min-height: 80vh;
-    display: flex;
-    align-items: center;
-    padding: 2rem 0;
-}
-
-.hero-text {
-    padding: 0 2rem;
-    margin-left: 50px;
-}
-
-.hero-image {
-    padding: 0 2rem;
-}
+} */
 
 /* About us section */
 .about-us {
     padding: 2rem 0;
-  }
-  
-  .about-us .card {
+}
+
+#about-us{
+    font-weight: bolder;
+}
+.about-us .card {
     margin-bottom: 1rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    width: calc(100% + 5px); /* Increase card width by 5px */
-  }
-  
-  .about-us .card-body {
+    width: calc(100% + 5px);
+    /* Increase card width by 5px */
+}
+
+.about-us .card-body {
     text-align: justify;
-    padding: 2rem 3rem 2rem 2rem; /* Add more padding on the right */
-  }
-  
-  .about-us .container {
+    padding: 2rem 3rem 2rem 2rem;
+    /* Add more padding on the right */
+}
+
+.about-us .container {
     max-width: 100%;
     padding: 0;
-  }
-  
-  .about-us .row {
-    margin: 0 -2.5px; /* Negative margin to compensate for column padding */
-  }
-  
-  .about-us .col-md-3 {
-    padding: 0 2.5px; /* Add padding to columns */
+}
+
+.about-us .row {
+    margin: 0 -2.5px;
+    /* Negative margin to compensate for column padding */
+}
+
+.about-us .col-md-3 {
+    padding: 0 2.5px;
+    /* Add padding to columns */
     margin-left: 2rem;
-  }
-  
-  .about-us .col-md-3:nth-child(2) .card {
-    height: calc(100% - 10px); /* Adjust the height of the center card */
-  }
-  
+}
+
+.about-us .col-md-3:nth-child(2) .card {
+    height: calc(100% - 10px);
+    /* Adjust the height of the center card */
+}
+
 
 /* Other sections */
 .scope,
@@ -185,106 +237,83 @@ h6 {
     width: 400px;
 }
 
-.cdb1{
+.cdb1 {
     margin-left: 22%;
 }
 
-.cdb2{
+.cdb2 {
     padding-left: 5%;
 }
 
-@media (max-width: 575px) {
-    .about-us .col-md-3 {
-        width: 100%;
-        margin-bottom: 10px;
-    }
-
-    .navbar-brand {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .container-fluid {
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .hero-text{
-        margin-left: 0;
-    }
-
-    .hero-image img {
-        max-width: 30%; 
-        height: auto;
-    }
-
-    .logo{
-        height: 3rem;
-    }
-}
-
-@media (max-width: 991px) {
-    .navbar-brand {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    .hero-text{
-        margin-left: 0;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-brand {
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-    
-    .hero-text{
-    margin-left: 0;
-    }
-}
 
 /* Add this CSS to your existing CSS file */
 .no-margin-right {
     margin-right: 0;
-  }
-  
-  @media (max-width: 991px) {
-    .no-margin-right {
-      margin-right: 15px; /* Adjust as needed */
-    }
-  }
-  
-  @media (max-width: 767px) {
-    .about-us .col-md-3 {
-      flex: 0 0 100%;
-      max-width: 92%;
-      padding: 0; /* Reset column padding on smaller screens */
-    }
-  
-    .about-us .col-md-3:nth-child(2) .card {
-      height: auto;
-    }
-  }
+}
 
 
 /* Important dates */
-.important-dates{
-    background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0)),url('pawel-czerwinski-cx90ak4WBFQ-unsplash.svg');
+.bgImage {
+    background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0)), url('pawel-czerwinski-cx90ak4WBFQ-unsplash.svg');
 }
 
-.registerClick{
+.imp{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* gap: 10px; */
+
+}
+
+.imp .card-impDet{
+    padding: 2rem;
+    width: 25rem;
+    background: rgba(255,255,255,0.55);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.275);
+    margin: auto 5px;
+    
+}
+
+.registerClick {
     margin-top: 1rem;
 }
 
-.qrCode, .accDet{
+.qrCode,
+.accDet {
     padding: 1rem;
 }
 
-#zero{
+#zero {
     color: red
 }
 
-.registration-details .col-md-7 {
-    margin-right: 8%; /* Add a margin to create a gap */
+
+.registration-details .accDet {
+    padding: 1rem;
+    background: rgba(255,255,255,0.55);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.275);
+}
+.registration-details .qrCode {
+    padding: 1rem;
+    background: rgba(255,255,255,0.55);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255,255,255,0.275);
+}
+
+.txtCP{
+    width: 80%;
+}
+.box {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 10px;
+    margin: 5px;
+    text-align: center;
+    /* font-weight: bold; */
 }
