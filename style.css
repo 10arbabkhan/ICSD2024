@@ -38,12 +38,15 @@ body {
     top: 9.5px;
     left: 472px;
     width: 190px;
+    font-size: 15px;
     height: 45px;
     background-color: #279E27;
     border-radius: 8px;
     padding: 4px;
     margin-left: 5px;
     margin-top: -3px;
+    align-items: center;
+    text-align: center;
 }
 
 .paper a {
