@@ -4,12 +4,17 @@
 body {
     background-color: #3e4444;
     font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
 }
 
 /* Navbar */
 .navbar {
     background-color: rgba(255, 255, 255, 0);
     color: #3e4444;
+    padding: 0;
 }
 
 .logo {
@@ -29,18 +34,11 @@ body {
     padding-left: 10px;
 }
 
-
 .paper {
-    /* position: absolute;  */
-    /* Use 'position: absolute' or 'position: fixed' */
     top: 9.5px;
-    /* Adjust the top position */
     left: 472px;
-    /* Adjust the left position */
     width: 150px;
-    /* Set the width */
     height: 45px;
-    /* Set the height */
     background-color: #279E27;
     border-radius: 8px;
     padding: 4px;
@@ -52,7 +50,7 @@ body {
     color: #ffffff;
 }
 
-/* Hover effect ______ under nav */
+/* Hover effect under nav */
 .nav-item:not(.paper):hover {
     font-weight: bold;
 }
@@ -62,11 +60,8 @@ body {
     display: block;
     width: 100%;
     height: 3px;
-    /* Adjust the height of the line as needed */
     background-color: #279E27;
-    /* Green color */
     margin-top: 5px;
-    /* Adjust the spacing between the text and the line */
 }
 
 /* Headings */
@@ -80,7 +75,6 @@ h6 {
     text-align: center;
 }
 
-
 /* Top */
 #Top {
     text-align: center;
@@ -93,100 +87,71 @@ h6 {
 /* Hero section */
 .hero-section {
     width: 92%;
-    min-height: 90vh;
-    /* top: 5%; */
+    height: 100vh;
     left: 5%;
-    
     display: flex;
     align-items: center;
-    
     justify-content: start;
-    /* padding: 2rem 0; */
+    /* Align content to the left */
     position: relative;
-    /* height: 100vh; */
     overflow: hidden;
-    /* padding-right: 5%; */
+    padding-bottom: 0;
 }
-
 
 .hero-section .hero-image {
     position: absolute;
     object-fit: cover;
-    /* border-radius: 5rem; */
-    /* padding: 0 2rem; */
-    /* margin-left: 3%; */
+    width: 100%;
+    height:110%;
+    top: 0;
+    left: 0;
 }
 
 .hero-section .hero-content {
-    /* 
-    text-align: center;
-    color: white;
-    
-    position: absolute;
-    margin-left: 10%; */
-    
-    /* top: 40%; */
-    /* left: 50%; */
-    margin-left: 2rem;
     z-index: 1;
     max-width: 40rem;
     color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.185); /* Adjust the alpha (transparency) value as needed */
-    backdrop-filter: blur(10px); /* Adjust the blur strength as needed */
+    background-color: rgba(255, 255, 255, 0.185);
+    backdrop-filter: blur(4px);
     padding: 20px;
+    text-align: left;
+    margin-left: 2rem;
 }
 
-
-/* hero Headings styles */
+/* Hero Headings styles */
 .heroHead {
-    /* width: 50%; */
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
-    text-align: left;
 }
 
-.heroHead2{
-    /* width: 50%; */
+.heroHead2 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
-    text-align: left;
 }
-
-
-
-
-
-
-/* Footer */
-/* #footer {
-    text-align: center;
-    padding: 7% 15%;
-    margin-left: 3%;
-} */
 
 /* About us section */
 .about-us {
     padding: 2rem 0;
 }
 
-#about-us{
+#about-us, #blder {
     font-weight: bolder;
 }
+
 .about-us .card {
     margin-bottom: 1rem;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.4);
     word-wrap: break-word;
     overflow-wrap: break-word;
-    width: calc(100% + 5px);
-    /* Increase card width by 5px */
+    min-height: 380px;
+    width: 100%;
+    height: 100%;
 }
 
 .about-us .card-body {
     text-align: justify;
-    padding: 2rem 3rem 2rem 2rem;
-    /* Add more padding on the right */
 }
 
 .about-us .container {
@@ -195,20 +160,15 @@ h6 {
 }
 
 .about-us .row {
-    margin: 0 -2.5px;
-    /* Negative margin to compensate for column padding */
+    margin: 0;
 }
 
 .about-us .col-md-3 {
-    padding: 0 2.5px;
-    /* Add padding to columns */
-    margin-left: 2rem;
+    padding: 1rem;
 }
 
-.about-us .col-md-3:nth-child(2) .card {
-    height: calc(100% - 10px);
-    /* Adjust the height of the center card */
-}
+
+
 
 
 /* Other sections */
@@ -224,17 +184,15 @@ h6 {
     margin-right: 50px;
 }
 
-/* Inter font class */
 .inter {
     font-family: 'Inter', sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
-    font-variation-settings:
-        "slnt" 0;
+    font-variation-settings: "slnt" 0;
 }
 
 .card-body {
-    width: 400px;
+    width: 100%;
 }
 
 .cdb1 {
@@ -245,35 +203,29 @@ h6 {
     padding-left: 5%;
 }
 
-
-/* Add this CSS to your existing CSS file */
 .no-margin-right {
     margin-right: 0;
 }
-
 
 /* Important dates */
 .bgImage {
     background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0)), url('pawel-czerwinski-cx90ak4WBFQ-unsplash.svg');
 }
 
-.imp{
+.imp {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    /* gap: 10px; */
-
 }
 
-.imp .card-impDet{
+.imp .card-impDet {
     padding: 2rem;
     width: 25rem;
-    background: rgba(255,255,255,0.55);
+    background: rgba(255, 255, 255, 0.55);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255,255,255,0.275);
+    border: 1px solid rgba(255, 255, 255, 0.275);
     margin: auto 5px;
-    
 }
 
 .registerClick {
@@ -286,34 +238,353 @@ h6 {
 }
 
 #zero {
-    color: red
+    color: red;
 }
-
 
 .registration-details .accDet {
     padding: 1rem;
-    background: rgba(255,255,255,0.55);
+    background: rgba(255, 255, 255, 0.55);
     -webkit-backdrop-filter: blur(4px);
     backdrop-filter: blur(4px);
-    border: 1px solid rgba(255,255,255,0.275);
-}
-.registration-details .qrCode {
-    padding: 1rem;
-    background: rgba(255,255,255,0.55);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255,255,255,0.275);
+    border: 1px solid rgba(255, 255, 255, 0.275);
 }
 
-.txtCP{
+.registration-details .qrCode {
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.55);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    border: 1px solid rgba(255, 255, 255, 0.275);
+}
+
+.txtCP {
     width: 80%;
 }
+
+/* Scope */
 .box {
-    background-color: #fff;
+    height: 35px;
+    padding-top: 0; /* Remove padding */
+    margin-top: 0; /* Remove margin */
+    text-align: center; /* Center the text horizontally */
+    line-height: 35px; /* Ensure text is vertically centered, matching the height */
+    gap: 1rem;
     border: 1px solid #ccc;
-    border-radius: 20px;
-    padding: 10px;
-    margin: 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.box:hover {
+    cursor: pointer;
+    background-color: #e0ffe0; /* Lightest green */
+}
+
+/* Container styles */
+.container {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+/* Center text within the container */
+.text-center {
     text-align: center;
-    /* font-weight: bold; */
+}
+
+/* Responsive grid settings */
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.col-md-2, .col-sm-4, .col-sm-6 {
+    padding: 0.5rem; /* Add some padding around the columns */
+}
+
+@media (max-width: 768px) {
+    .CM {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .container .row .col-sm-4 .CM {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .CM {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+
+/* Common Styles */
+.notable-speakers,
+.advisory-board {
+    padding: 2rem;
+    text-align: center;
+}
+
+/* Grid Container */
+.speaker-grid,
+.member-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 200px);
+    /* Four cards per row, each card 200px wide */
+    justify-content: center;
+    /* Center the grid */
+    gap: 0;
+    /* Remove gap between grid items */
+}
+
+/* Card Styles */
+.speaker-card,
+.member-card {
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    /* Remove margin from cards */
+    width: 200px;
+    /* Reduced width */
+}
+
+/* Image Styles */
+.speaker-card img,
+.member-card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+.cen {
+    margin-left: 100%;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+
+    .speaker-grid,
+    .member-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        justify-content: center;
+        /* Ensure centered alignment */
+    }
+    .cen{
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .speaker-card,
+    .member-card {
+        width: 100%;
+        /* Full width for smaller screens */
+    }
+
+    .speaker-grid,
+    .member-grid {
+        grid-template-columns: repeat(2, 1fr);
+        /* Two cards per row on smaller screens */
+    }
+
+    .cen {
+        margin-left: 0;
+    }
+}
+
+
+
+/* Authors */
+
+.authors-section {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.authors-section h3 {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.authors-section p {
+  margin-bottom: 20px;
+}
+
+.authors-section h1 {
+    text-align: center;
+    position: relative;
+  }
+  
+  .authors-section h1::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    width: 10%;
+    border-bottom: 2px solid #6db66c; /* Green line */
+    transform: translateX(-50%);
+  }
+  
+
+.btn-unique {
+  background-color: #6db66c;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  text-transform: uppercase;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.btn-unique:hover {
+  background-color: #518c4e;
+}
+
+
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 40px 0;
+}
+
+.footer-section {
+    margin-bottom: 20px;
+}
+
+.footer-section h5 {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.footer-section p {
+    margin-bottom: 10px;
+}
+
+.footer-section i {
+    margin-right: 5px;
+}
+
+/* Media Queries */
+@media (max-width: 991px) {
+
+    .navbar-brand,
+    .hero-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .container-fluid {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .logo {
+        height: 3rem;
+    }
+
+    .hero-section {
+        width: 100%;
+        left: 0;
+        padding: 1rem;
+        justify-content: center;
+        height: 48rem;
+    }
+
+    .hero-section .hero-image {
+        height: 70vh;
+        width: 100vh;
+        border-radius: 0;
+    }
+
+    .hero-section .hero-content {
+        margin: 0;
+        /* Center the content */
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.726);
+        /* backdrop-filter: blur(15px); */
+       
+        text-align: center;
+        
+    }
+
+    .registration-details .accDet,
+    .registration-details .qrCode {
+        width: fit-content;
+        margin: auto;
+    }
+
+    .about-us .col-md-3 {
+        width: 80%;
+        padding: 0;
+        margin-bottom: 10px;
+    }
+
+    .about-us .col-md-3:nth-child(2) .card {
+        height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .hero-section {
+        width: 105%;
+        height: 38rem;
+    }
+
+    .hero-section .hero-image {
+        height: 70vh;
+        width: 100vh;
+    }
+
+    .hero-section .hero-content {
+        max-width: 100%;
+        padding: 1rem;
+        margin: 0 auto;
+        
+        background-color: rgba(255, 255, 255, 0.185);
+        backdrop-filter: blur(4px);
+        /* margin-top: -14rem; */
+    }
+
+
+    .about-us .col-md-3 {
+        width: 80%;
+        padding: 0;
+        /* margin-bottom: 10px; */
+    }
+
+    .about-us .row {
+        margin: 0;
+        padding: 0;
+    }
+
+    .about-us .card {
+        margin-bottom: 10px;
+    }
+
+    .about-us .card-body {
+        padding: 1rem;
+    }
+
+    .imp {
+        flex-direction: column;
+    }
+
+    .imp .card-impDet {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .registerClick {
+        margin-top: 1rem;
+    }
 }
