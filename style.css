@@ -7,22 +7,27 @@ body {
     margin: 0;
     padding: 0;
     overflow-x: hidden;
-    
+
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    
+
 }
 
 /* Navbar */
 .navbar {
-    background-color: rgba(255, 255, 255, 0.771); /* Fully opaque white */
-    backdrop-filter: blur(3px); /* Adds blur effect */
-    border-bottom: 3px solid transparent; /* Transparent border initially */
-    transition: border-color 0.3s ease; /* Smooth transition for border color */
+    background-color: rgba(255, 255, 255, 0.771);
+    /* Fully opaque white */
+    backdrop-filter: blur(3px);
+    /* Adds blur effect */
+    border-bottom: 3px solid transparent;
+    /* Transparent border initially */
+    transition: border-color 0.3s ease;
+    /* Smooth transition for border color */
 }
+
 .logo {
-    height: 4rem;
+    height: 2rem;
 }
 
 .navbar-brand {
@@ -44,7 +49,7 @@ body {
     width: 150px;
     font-size: 15px;
     height: 45px;
-    background-color: #279E27;
+    background-color: #73EACB;
     border-radius: 8px;
     padding: 4px;
     margin-left: 5px;
@@ -67,7 +72,7 @@ body {
     display: block;
     width: 100%;
     height: 3px;
-    background-color: #279E27;
+    background-color: #73EACB;
     margin-top: 5px;
 }
 
@@ -109,7 +114,7 @@ h6 {
     position: absolute;
     object-fit: cover;
     width: 100%;
-    height:110%;
+    height: 110%;
     top: 0;
     left: 0;
 }
@@ -117,12 +122,13 @@ h6 {
 .hero-section .hero-content {
     z-index: 1;
     max-width: 40rem;
-    color: #ffffff;
-    background-color: rgba(255, 255, 255, 0.185);
+    color: #000000;
+    background-color: rgba(255, 255, 255, 0.451);
     backdrop-filter: blur(4px);
     padding: 20px;
     text-align: left;
     margin-left: 2rem;
+    border-radius: 16px;
 }
 
 /* Hero Headings styles */
@@ -130,12 +136,14 @@ h6 {
     font-family: 'Inter', sans-serif;
     font-weight: 300;
     font-size: 1.5rem;
+    text-align: left;
 }
 
 .heroHead2 {
     font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
+    text-align: left;
 }
 
 /* About us section */
@@ -143,7 +151,8 @@ h6 {
     padding: 2rem 0;
 }
 
-#about-us, #blder {
+#about-us,
+#blder {
     font-weight: bolder;
     padding-top: 3rem;
     padding-bottom: 2rem;
@@ -237,9 +246,7 @@ h6 {
     margin: auto 12px;
 }
 
-.registerClick {
-    margin-top: 1rem;
-}
+
 
 .qrCode,
 .accDet {
@@ -251,19 +258,77 @@ h6 {
 }
 
 .registration-details .accDet {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.55);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.275);
+    /* Child objects in a smart layout frame */
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: 463px;
+    height: 308px;
+    border-radius: 16px;
+    opacity: 1;
+
+    /* Smart layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    gap: 32px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(60px);
+    z-index: 0;
 }
 
 .registration-details .qrCode {
-    padding: 1rem;
-    background: rgba(255, 255, 255, 0.55);
-    -webkit-backdrop-filter: blur(4px);
-    backdrop-filter: blur(4px);
-    border: 1px solid rgba(255, 255, 255, 0.275);
+    /* Child objects in a smart layout frame */
+    position: static;
+    left: 655px;
+    top: 0px;
+    width: 292px;
+    height: 308px;
+    border-radius: 16px;
+    opacity: 1;
+
+    /* Smart layout */
+    display: flex;
+    flex-direction: row;
+    padding: 38px 56px;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    backdrop-filter: blur(60px);
+
+    z-index: 1;
+}
+
+.registration-details .qrCode .img-fluid {
+    width: 180px;
+    height: 180px;
+}
+
+.registerClick {
+    /* Child objects in a smart layout frame */
+    position: static;
+    left: 31px;
+    top: 200px;
+    width: 118px;
+    height: 32px;
+    border-radius: 8px;
+    opacity: 1;
+    margin-top: 20px;
+
+    /* Smart layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px;
+    gap: 0px 0px;
+    flex-wrap: wrap;
+    align-content: center;
+
+    background: #FFFFFF;
+
+    z-index: 1;
 }
 
 .txtCP {
@@ -274,46 +339,52 @@ h6 {
 /* Patron */
 .chief-patron {
     display: flex;
-    justify-content: center;  
-  }
-  
-  
-  .chief-patron .speaker-card{
-      background-color: #fff;
-      /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-      padding: 1rem;
-      text-align: center;
-      margin: 0;
-      /* Remove margin from cards */
-      width: 300px;
-      /* Reduced width */
-  }
-  
-  .chief-patron .speaker-card img{
-      width: 200px;
-      height: 200px;
-      object-fit: cover;
-      margin-bottom: 1rem;
-  }
-  
+    justify-content: center;
+}
+
+
+.chief-patron .speaker-card {
+    background-color: #fff;
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    padding: 1rem;
+    text-align: center;
+    margin: 0;
+    /* Remove margin from cards */
+    width: 300px;
+    /* Reduced width */
+}
+
+.chief-patron .speaker-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
 
 /* Scope */
 .box {
     height: 35px;
-    padding-top: 0; /* Remove padding */
-    margin-top: 0; /* Remove margin */
-    text-align: center; /* Center the text horizontally */
-    line-height: 35px; /* Ensure text is vertically centered, matching the height */
+    padding-top: 0;
+    /* Remove padding */
+    margin-top: 0;
+    /* Remove margin */
+    text-align: center;
+    /* Center the text horizontally */
+    line-height: 35px;
+    /* Ensure text is vertically centered, matching the height */
     gap: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
     margin-bottom: 10px;
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    transition: background-color 0.3s;
+    /* Smooth transition for hover effect */
 }
 
 .box:hover {
     cursor: pointer;
-    background-color: #e0ffe0; /* Lightest green */
+    background-color: #73EACB;
+    /* Lightest green */
 }
 
 /* Container styles */
@@ -333,8 +404,11 @@ h6 {
     justify-content: center;
 }
 
-.col-md-2, .col-sm-4, .col-sm-6 {
-    padding: 0.5rem; /* Add some padding around the columns */
+.col-md-2,
+.col-sm-4,
+.col-sm-6 {
+    padding: 0.5rem;
+    /* Add some padding around the columns */
 }
 
 @media (max-width: 768px) {
@@ -409,7 +483,8 @@ h6 {
         justify-content: center;
         /* Ensure centered alignment */
     }
-    .cen{
+
+    .cen {
         margin-left: 0;
     }
 }
@@ -441,8 +516,10 @@ h6 {
     position: relative;
     padding-top: 50px;
     padding-bottom: 50px;
-    color: #fff; /* Ensures the text is visible on the background image */
-    overflow: hidden; /* Ensures the pseudo-element does not overflow */
+    color: #fff;
+    /* Ensures the text is visible on the background image */
+    overflow: hidden;
+    /* Ensures the pseudo-element does not overflow */
 }
 
 .authors-section::before {
@@ -452,13 +529,20 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('authorBg.jpg'); /* Replace with your image URL */
-    background-size: cover; /* Ensures the image covers the entire section */
-    background-position: center; /* Centers the image */
-    background-attachment: fixed; /* Keeps the background fixed during scrolling */
-    background-repeat: no-repeat; /* Ensures the image doesn't repeat */
-    filter: blur(4px); /* Adds blur effect to the background image */
-    z-index: -2; /* Places the pseudo-element behind the text */
+    background-image: url('authorBg.jpg');
+    /* Replace with your image URL */
+    background-size: cover;
+    /* Ensures the image covers the entire section */
+    background-position: center;
+    /* Centers the image */
+    background-attachment: fixed;
+    /* Keeps the background fixed during scrolling */
+    background-repeat: no-repeat;
+    /* Ensures the image doesn't repeat */
+    filter: blur(4px);
+    /* Adds blur effect to the background image */
+    z-index: -2;
+    /* Places the pseudo-element behind the text */
 }
 
 .authors-section::after {
@@ -468,35 +552,42 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)); /* Adds a dark gradient overlay */
-    z-index: -1; /* Places the gradient overlay behind the text */
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    /* Adds a dark gradient overlay */
+    z-index: -1;
+    /* Places the gradient overlay behind the text */
 }
 
-.authors-section h3, .authors-section p, .authors-section h1, .authors-section ul {
+.authors-section h3,
+.authors-section p,
+.authors-section h1,
+.authors-section ul {
     position: relative;
-    color: #fff; /* Ensures all text elements are white */
+    color: #fff;
+    /* Ensures all text elements are white */
 }
 
 .authors-section h1::after {
-    border-bottom: 2px solid #fff; /* Change the underline color to white */
+    border-bottom: 2px solid #fff;
+    /* Change the underline color to white */
 }
-  
+
 
 .btn-unique {
-  background-color: #279E27;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-size: 16px;
-  text-transform: uppercase;
-  cursor: pointer;
-  text-decoration: none;
+    background-color: #73EACB;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    text-transform: uppercase;
+    cursor: pointer;
+    text-decoration: none;
 }
 
 .btn-unique:hover {
-  /* background-color: #316a2e; */
-  background-color: #73EACB;
+    /* background-color: #316a2e; */
+    background-color: #73EACB;
 }
 
 .btn-unique {
@@ -512,8 +603,10 @@ h6 {
 }
 
 .btn-unique:hover {
-    background-color: #5bc1a9; /* Darker shade for hover */
-    color: #ffffff; /* Ensuring the text color remains white */
+    background-color: #5bc1a9;
+    /* Darker shade for hover */
+    color: #ffffff;
+    /* Ensuring the text color remains white */
 }
 
 
@@ -523,7 +616,7 @@ h6 {
     background-color: #333;
     color: #fff;
     padding: 60px 50px;
-    
+
 }
 
 
@@ -532,26 +625,27 @@ h6 {
 }
 
 
-.footer .footer-section p #adr{
+.footer .footer-section p #adr {
     padding-left: 24px;
 }
-.footer .footer-section p #phone{
+
+.footer .footer-section p #phone {
     padding-left: 28px;
 }
 
 
-.footICSD{
-    
-}
+.footICSD {}
 
-.footer .foot{
+.footer .foot {
     text-align: left;
 }
+
 .footer-section p {
     margin-bottom: 10px;
 }
 
-#jhAdress, #foot-link{
+#jhAdress,
+#foot-link {
     text-decoration: none;
     color: #fff;
 }
@@ -561,7 +655,8 @@ h6 {
 }
 
 .footer-section p i.fa-phone {
-    vertical-align: middle; /* Vertically center icons between phone numbers */
+    vertical-align: middle;
+    /* Vertically center icons between phone numbers */
 }
 
 .footer-maintained {
@@ -612,9 +707,9 @@ h6 {
         padding: 1rem;
         background-color: rgba(255, 255, 255, 0.726);
         /* backdrop-filter: blur(15px); */
-       
+
         text-align: center;
-        
+
     }
 
     .registration-details .accDet,
@@ -633,8 +728,9 @@ h6 {
         height: auto;
     }
 
-    
-    .HR .box, .Cm1 .box{
+
+    .HR .box,
+    .Cm1 .box {
         height: 364px;
         line-height: 25px;
     }
@@ -642,10 +738,10 @@ h6 {
 }
 
 @media (max-width: 575px) {
-    .navbar{
+    .navbar {
         width: 110%;
     }
-    
+
     .hero-section {
         width: 110%;
         height: 38rem;
@@ -660,13 +756,13 @@ h6 {
         max-width: 100%;
         padding: 1rem;
         margin: 0 auto;
-        
+
         background-color: rgba(255, 255, 255, 0.185);
         backdrop-filter: blur(4px);
         /* margin-top: -14rem; */
     }
 
-    .about-us{
+    .about-us {
         width: 114%;
     }
 
@@ -689,7 +785,7 @@ h6 {
         padding: 1rem;
     }
 
-    .bgImage{
+    .bgImage {
         width: 110%;
     }
 
@@ -706,36 +802,39 @@ h6 {
     .registerClick {
         margin-top: 1rem;
     }
-    
-    .call-for-papers{
+
+    .call-for-papers {
         width: 114%;
         padding: 2rem;
     }
 
-    #scope{
+    #scope {
         width: 110%;
         padding: 1rem;
     }
 
-    .HR .box, .Cm1 .box{
+    .HR .box,
+    .Cm1 .box {
         height: 64px;
         line-height: 25px;
     }
 
-    #Cmem{
+    #Cmem {
         width: 110%;
         padding: 1rem;
     }
 
-    .advisory-board, .notable-speakers, .authors-section{
+    .advisory-board,
+    .notable-speakers,
+    .authors-section {
         width: 110%;
     }
 
-    .notable-speakers{
+    .notable-speakers {
         /* margin-left: -2rem; */
     }
 
-    .footer .footer-section p #adr{
+    .footer .footer-section p #adr {
         padding-left: 0px;
     }
 
