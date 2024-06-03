@@ -8,6 +8,9 @@
   <!-- CSS only -->
   <link rel="stylesheet" href="style.css">
 
+  <!-- Fontawesome for icons -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
   <!-- Bootstrap css -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -18,23 +21,23 @@
 
   <script>
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            e.preventDefault();
-    
-            document.querySelector(this.getAttribute('href')).scrollIntoView({
-                behavior: 'smooth'
-            });
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
+      });
     });
-    </script>
-    
+  </script>
+
 
 
 </head>
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar navbar-expand-lg bg-white sticky-top">
+  <nav class="navbar navbar-expand-lg  sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="index.html">
         <img class="logo" src="jamia hamdard logo@1x.svg" alt="ICSD-JH"></a>
@@ -57,7 +60,7 @@
             <a class="nav-link" href="#cop">Call for Papers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Committee</a>
+            <a class="nav-link" href="#Committee">Committee</a>
           </li>
           <li class="nav-item paper">
             <a class="nav-link" href="#authors">Paper Submission</a>
@@ -68,24 +71,24 @@
   </nav>
 
   <!-- Content -->
-    <!-- Hero Section -->
-    <div class="hero-section">
+  <!-- Hero Section -->
+  <div class="hero-section">
 
-      <img src="Hero Image.svg" alt="Hero Image" class="hero-image">
+    <img src="Hero Image.svg" alt="Hero Image" class="hero-image">
 
-      <div class="hero-content">
-        <h2 class="heroHead">INTERNATIONAL CONFERENCE ON</h2>
-        <h1 class="heroHead2">SUSTAINABILITY AND DIGITALIZATION</h1>
-        <h3 class="heroHead">A BUSINESS, ECONOMIC & SOCIETAL PERSPECTIVE 2024</h3>
-      </div>
-
+    <div class="hero-content">
+      <h2 class="heroHead">INTERNATIONAL CONFERENCE ON</h2>
+      <h1 class="heroHead2">SUSTAINABILITY AND DIGITALIZATION</h1>
+      <h3 class="heroHead">A BUSINESS, ECONOMIC & SOCIETAL PERSPECTIVE 2024</h3>
     </div>
+
+  </div>
   <!-- About us -->
   <div class="row about-us justify-content-center" id="about">
     <h2 class="text-center mb-4" id="about-us">About Us</h2>
     <div class="container text-center">
       <div class="row justify-content-center">
-        
+
         <div class="col-12 col-md-3">
           <div class="card">
             <div class="card-body">
@@ -208,7 +211,7 @@
 
 
   <div id="cop" class="col-md-9 mx-auto p-2 reg">
-    <div class="row registration-details justify-content-center">
+    <div class="row call-for-papers justify-content-center">
       <h2 id="blder">Call for Papers</h2>
       <div class="regText text-center mb-5 mt-3">
 
@@ -220,18 +223,20 @@
           List) or an edited book from a reputed publication house.
 
         </p>
-        <button onclick="window.location.href = '#id';" class="btn btn-outline registerClick"
-          style="background-color: #73EACB;">View Call for Papers</button>
+        
 
         <!-- <button onclick="window.location.href = 'your-url-here';">View Call for Papers</button> -->
-
+        <div class="text-center" style="margin-top: 48px;">
+          <a href="ICSD 24 Flyer3.pdf" class="btn-unique mt-3 registerClick"  target="_blank">View Call for Papers</a>
+      </div>
+      
       </div>
 
     </div>
   </div>
 
   <!-- Scope -->
-  <div class="container my-5" id="scope">
+  <div class="container my-5 Scopes" id="scope">
     <h1 class="text-center" id="blder">Scope of ICSD '24</h1>
     <div class="row justify-content-center">
       <div class="col-md-2 col-sm-6">
@@ -273,7 +278,7 @@
       </div>
     </div>
     <div class="row justify-content-center">
-      <div class="col-md-5 col-sm-6">
+      <div class="col-md-5 col-sm-12 HR ">
         <div class="box">Human Resource Practices and Organizational Behavior</div>
       </div>
       <div class="col-md-3 col-sm-6">
@@ -286,27 +291,84 @@
   </div>
 
   <!-- Leadership -->
-  <div class="leader">
-
+  <div class="leadership-section" id="Committee">
+    <h2 id="blder">LEADERSHIP @ JAMIA HAMDARD</h2>
+    <h2 id="blder">CHIEF-PATRON</h2>
+  
+    <div class="chief-patron">
+      <div class="speaker-card">
+        <img src="https://icsd.muzzammil.xyz/Profiles/VC-MAA.jpg" alt="Prof. (Dr.) M Atshar Alam" id="profile">
+        <p class="name">Prof. (Dr.) M Atshar Alam</p>
+        <p class="member-designation">Vice Chancellor, Jamia Hamdard</p>
+      </div>
+    </div>
   </div>
-
 
   <!-- Patrons -->
 
+  <section class="notable-speakers" >
+    <h2 id="blder">PATRONS</h2>
+    <div class="speaker-grid">
+      <div class="speaker-card">
+        <img src="https://icsd.muzzammil.xyz/Profiles/Shibu%20Sir.png" alt="Speaker 1">
+        <p class="name">Speaker Name 1</p>
+        <p>Affiliation 1</p>
+      </div>
+      <div class="speaker-card">
+        <img src="speaker2.jpg" alt="Speaker 2">
+        <p class="name">Speaker Name 2</p>
+        <p>Affiliation 2</p>
+      </div>
 
+    </div>
+  </section>
 
 
 
 
   <!--Co-patrons  -->
+  <section class="notable-speakers">
+    <h2 id="blder">CO-PATRONS</h2>
+    <div class="speaker-grid">
+      <div class="speaker-card">
+        <img src="https://icsd.muzzammil.xyz/Profiles/Prof.%20Pojasek.jpg" alt="Speaker 1">
+        <p class="name">Speaker Name 1</p>
+        <p>Affiliation 1</p>
+      </div>
+      <div class="speaker-card">
+        <img src="speaker2.jpg" alt="Speaker 2">
+        <p class="name">Speaker Name 2</p>
+        <p>Affiliation 2</p>
+      </div>
+
+    </div>
+  </section>
+
+
+  <section class="notable-speakers">
+    <h2 id="blder">ORGANIZING COMMITTEE</h2>
+    <div class="speaker-grid">
+      <div class="speaker-card">
+        <img src="https://icsd.muzzammil.xyz/Profiles/Prof.%20Pojasek.jpg" alt="Speaker 1">
+        <p class="name">Speaker Name 1</p>
+        <p>Affiliation 1</p>
+      </div>
+      <div class="speaker-card">
+        <img src="speaker2.jpg" alt="Speaker 2">
+        <p class="name">Speaker Name 2</p>
+        <p>Affiliation 2</p>
+      </div>
+
+    </div>
+  </section>
 
 
 
 
   <!--  -->
   <!-- Committee Members -->
-  <div class="container my-5">
-    <h1 class="text-center" id="blder">Committee Members</h1>
+  <div class="container my-5" id="Cmem">
+    <h2 class="text-center" id="blder">COMMITTEE MEMBERS</h2>
     <div class="row justify-content-center">
       <div class="col-md-2 col-sm-4 CM">
         <div class="box">Dr Sana Beg</div>
@@ -318,22 +380,24 @@
         <div class="box">Dr Waseem Khan</div>
       </div>
       <div class="col-md-2 col-sm-4 CM">
-        <div class="box">Dr Matloob Ulllah Khan</div>
+        <div class="box">Dr Abdullah</div>
       </div>
     </div>
 
     <div class="row justify-content-center">
-      <div class="col-md-2 col-sm-4 CM">
-        <div class="box">Dr Abdullah</div>
-      </div>
+
       <div class="col-md-2 col-sm-6 CM">
         <div class="box">Dr Farheen Ahmed</div>
       </div>
       <div class="col-md-2 col-sm-6 CM">
-        <div class="box">Dr Faizan KHan Sherwani</div>
-      </div>
-      <div class="col-md-2 col-sm-6 CM">
         <div class="box">Dr Mohd Safiq</div>
+      </div>
+
+      <div class="col-md-2 col-sm-4 CM Cm1">
+        <div class="box">Dr Matloob Ulllah Khan</div>
+      </div>
+      <div class="col-md-2 col-sm-6 CM Cm1">
+        <div class="box">Dr Faizan KHan Sherwani</div>
       </div>
     </div>
   </div>
@@ -342,7 +406,7 @@
   <!-- Notable speakers -->
 
   <section class="notable-speakers">
-    <h2 id="blder">Notable Speakers</h2>
+    <h2 id="blder">NOTABLE SPEAKERS</h2>
     <div class="speaker-grid">
       <div class="speaker-card">
         <img src="https://icsd.muzzammil.xyz/Profiles/Prof.%20Pojasek.jpg" alt="Speaker 1">
@@ -423,7 +487,7 @@
   </section>
 
   <section class="advisory-board">
-    <h2 id="blder">Advisory Board Members</h2>
+    <h2 id="blder">ADVISORY BOARD MEMBERS</h2>
     <div class="member-grid">
       <div class="member-card">
         <img src="member1.jpg" alt="Member 1">
@@ -483,7 +547,7 @@
   <!--For authors  -->
   <section id="authors" class="authors-section">
     <div class="container my-5">
-      <h1 class="text-center" id="blder">For The Authors</h1>
+      <h1 class="text-center" id="blder">FOR THE AUTHORS</h1>
       <div class="row">
         <div class="col-md-6">
           <h3>Publication</h3>
@@ -492,9 +556,10 @@
             <li>Journals of repute (Scopus/ABDC/UGC Care List)</li>
             <li>An edited book of a reputed publication house</li>
           </ul>
-  
+
           <h3>Submission Guidelines</h3>
-          <p>Please submit the extended abstract (1000-2000 words) and Full Paper (5000-7000 words), excluding references. The abstract should cover:</p>
+          <p>Please submit the extended abstract (1000-2000 words) and Full Paper (5000-7000 words), excluding
+            references. The abstract should cover:</p>
           <ul>
             <li>Research Gap and Research Problem</li>
             <li>The Objective of the Study and Summary within 250 words</li>
@@ -503,62 +568,69 @@
             <li>Implications of the Study</li>
           </ul>
           <p>Incomplete submissions will not be considered for review.</p>
-        </div>
-        <div class="col-md-6">
+       
           <h3>Formatting</h3>
-          <p>Use Times New Roman 12-point font, double spaced, 1-inch (2.5 cm) margin all around, and 8.5” x 11” (A4) page setting. References may be single-spaced. <br> In text citations and references should follow the American Psychological Association (APA) Style.</p>
-  
+          <p>Use Times New Roman 12-point font, double spaced, 1-inch (2.5 cm) margin all around, and 8.5” x 11” (A4)
+            page setting. References may be single-spaced. <br> In text citations and references should follow the
+            American Psychological Association (APA) Style.</p>
+
           <h3>Awards</h3>
           <p>Selective high-quality research papers from each technical session will be awarded best paper award.</p>
-  
+
           <h3>Submission</h3>
-          <p>Submit abstracts/full papers to: <a href="mailto:submission_icsd@jamiahamdard.ac.in">submission_icsd@jamiahamdard.ac.in</a></p>
+          <p>Submit abstracts/full papers to: <a
+              href="mailto:submission_icsd@jamiahamdard.ac.in">submission_icsd@jamiahamdard.ac.in</a></p>
         </div>
       </div>
-      <div class="text-center">
-        <a href="#" class="btn-unique mt-3">Brochure</a>
-      </div>
+      <div class="text-center" style="margin-top: 48px;">
+        <a href="ICSD 2024.pdf" class="btn-unique mt-3" target="_blank">Brochure</a>
+    </div>
+    
     </div>
   </section>
-  
 
 
-
-
-<!-- Footer -->
+  <!-- Footer -->
   <footer class="footer">
-    <div class="container">
+    <div class="container-fluid">
       <div class="row">
         <div class="col-md-4 footer-section">
-          <h5>ICSD '22</h5>
-          <p><a href="#about">About</a> • <a href="#Call for Paper">Call for Paper</a> • Paper Submission • Committee
+          <h2 class="foot" id="footICSD">ICSD '24</h2>
+          <p ><a href="#about" id="foot-link">About</a> • <a href="#Call for Paper" id="foot-link">Call for Paper</a> • <a href="#authors" id="foot-link">Paper Submission</a> • <a href="#Committee" id="foot-link">Comittee</a>
           </p>
           <p>&copy; ICSD</p>
         </div>
         <div class="col-md-4 footer-section">
-          <h5>Department of Management</h5>
-          <p>School of Management & Business Studies</p>
-          <p>Jamia Hamdard, New Delhi 110062</p>
-          <p>
-            <i class="fas fa-map-marker-alt"></i>
-            +91-9708424348<br>
-            +91-9997764720<br>
-            +91-9458884380<br>
-            +91-8791248131
+          <!-- <h5 class="foot">Department of Management</h5> -->
+          <a href="https://maps.app.goo.gl/nqVDV1Ss993m5Frg6" target="_blank" id="jhAdress">
+            <p>
+              <i class="fas fa-map-marker-alt"></i>Department of Management <br>
+              <span id="adr">
+                School of Management & Business Studies <br>
+              </span>
+              <span id="adr">
+                Jamia Hamdard, New Delhi 110062
+              </span>
+            </p>
+          </a>
+          <p><i class="fa fa-phone fa-rotate-90"></i> +91-9654631656
+            <br>
+            <span id="phone">
+              +91-9711360703
+            </span>
           </p>
+          <p><i class="fas fa-envelope"></i> query_icsd@jamiahamdard.ac.in</p>
         </div>
         <div class="col-md-4 footer-section">
-          <h5>ICSD '22</h5>
-          <p>1<sup>st</sup> International Conference on Sustainability and Digitalization</p>
-          <p>
-            <i class="fas fa-envelope"></i>
-            query_icsd@jamiahamdard.ac.in
-          </p>
-          <p>Maintained by Department of Management</p>
+          <h5 class="foot">ICSD '24</h5>
+          <p>2<sup>nd</sup> International Conference on Sustainability and Digitalization</p>
         </div>
       </div>
     </div>
   </footer>
+  <p class="footer-maintained">Maintained by Kaif Imteyaz</p>
+
+
   <!-- Bootstrap js -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
