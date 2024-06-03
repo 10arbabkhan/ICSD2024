@@ -58,6 +58,9 @@ body {
     text-align: center;
 }
 
+/* .paper:hover{
+    background-color: #1f6653;
+} */
 .paper a {
     color: #ffffff;
 }
@@ -149,6 +152,7 @@ h6 {
 /* About us section */
 .about-us {
     padding: 2rem 0;
+    background-color: #F8FAFA;
 }
 
 #about-us,
@@ -227,7 +231,7 @@ h6 {
 
 /* Important dates */
 .bgImage {
-    background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0)), url('pawel-czerwinski-cx90ak4WBFQ-unsplash.svg');
+    background-image: linear-gradient(to bottom, #ffffff00, rgba(255, 255, 255, 0)), url('bgLogo/pawel-czerwinski-cx90ak4WBFQ-unsplash.jpg');
 }
 
 .imp {
@@ -362,30 +366,87 @@ h6 {
 }
 
 
+
 /* Scope */
-.box {
-    height: 35px;
-    padding-top: 0;
-    /* Remove padding */
-    margin-top: 0;
-    /* Remove margin */
+#scope-section {
+    padding-bottom: 3rem;
+  }
+  
+  .scope-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+  }
+  
+  .sub-heading {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-bottom: 2rem;
+  }
+  
+  .scope-grid {
+    display: grid;
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  
+  .scope-row {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(200px, 1fr));
+    grid-gap: 1rem;
+  }
+  
+  .scope-row.three-columns {
+    grid-template-columns: repeat(3, minmax(200px, 1fr));
+  }
+  
+  .scope-box {
+    padding: 0.5rem;
     text-align: center;
-    /* Center the text horizontally */
-    line-height: 35px;
-    /* Ensure text is vertically centered, matching the height */
-    gap: 1rem;
     border: 1px solid #ccc;
     border-radius: 8px;
-    margin-bottom: 10px;
     transition: background-color 0.3s;
-    /* Smooth transition for hover effect */
-}
-
-.box:hover {
+    height: 35px;
+    line-height: 1.5;
+  }
+  
+  .long-box {
+    height: auto;
+    line-height: 1.2;
+    padding: 0.5rem;
+  }
+  
+  .scope-box:hover {
     cursor: pointer;
     background-color: #73EACB;
-    /* Lightest green */
-}
+  }
+  
+  @media (max-width: 768px) {
+    .scope-row,
+    .scope-row.three-columns {
+      grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
+  }
+
+  @media (max-width: 1200px) {
+    .scope-row,
+    .scope-row.three-columns {
+      grid-template-columns: repeat(1, minmax(150px, 1fr));
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .scope-row,
+    .scope-row.three-columns {
+      grid-template-columns: repeat(1, minmax(100px, 1fr));
+    }
+  }
+
+
 
 /* Container styles */
 .container {
@@ -428,6 +489,47 @@ h6 {
     }
 }
 
+/* Committe members */
+.committee-members {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(210px, 1fr));
+    grid-gap: 1rem;
+    justify-content: center;
+  }
+  
+  .member-box {
+    height: 35px;
+    padding: 0.5rem;
+    text-align: center;
+    line-height: 1.5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  .member-box:hover {
+    cursor: pointer;
+    background-color: #73EACB;
+  }
+  
+  .long-name {
+    height: auto;
+    line-height: 1.2;
+    padding: 0.5rem;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .committee-members {
+      grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    }
+  }
+  
+  @media (max-width: 575px) {
+    .committee-members {
+      grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+  }
 
 /* Common Styles */
 .notable-speakers,
@@ -440,7 +542,7 @@ h6 {
 .speaker-grid,
 .member-grid {
     display: grid;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 250px);
     /* Four cards per row, each card 200px wide */
     justify-content: center;
     /* Center the grid */
@@ -457,17 +559,54 @@ h6 {
     text-align: center;
     margin: 0;
     /* Remove margin from cards */
-    width: 200px;
+    width: 250px;
     /* Reduced width */
 }
 
 /* Image Styles */
 .speaker-card img,
 .member-card img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 210px;
     object-fit: cover;
     margin-bottom: 1rem;
+}
+
+.Patrons-grid{
+    display: grid;
+    grid-template-columns: repeat(2, 450px);
+    /* Four cards per row, each card 200px wide */
+    justify-content: center;
+    /* Center the grid */
+    gap: 2rem;
+}
+
+.Patrons-speakers{
+    padding: 2rem;
+    text-align: center;
+}
+.Patrons{
+    background-color: #fff;
+    padding: 1rem;
+    /* text-align: center; */
+    width: 450px;
+}
+
+.Patrons img{
+    width: 200px;
+    height: 210px;
+    object-fit: cover;
+    margin-bottom: 1rem;
+}
+
+#ravi{
+    /* height: 220px; */
+}
+
+.name, .member-designation{
+    font-size: 16px;
+    font-weight: 700;
+    color: #555;
 }
 
 .cen {
@@ -478,7 +617,7 @@ h6 {
 @media (max-width: 1200px) {
 
     .speaker-grid,
-    .member-grid {
+    .member-grid, .Patrons-grid {
         grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
         justify-content: center;
         /* Ensure centered alignment */
@@ -492,14 +631,14 @@ h6 {
 @media (max-width: 768px) {
 
     .speaker-card,
-    .member-card {
+    .member-card, .Patrons {
         width: 100%;
         /* Full width for smaller screens */
     }
 
     .speaker-grid,
-    .member-grid {
-        grid-template-columns: repeat(2, 1fr);
+    .member-grid, .Patrons-grid {
+        grid-template-columns: repeat(1, 1fr);
         /* Two cards per row on smaller screens */
     }
 
@@ -527,15 +666,15 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('authorBg.jpg');
+    background-image: url('bgLogo/authorBg.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    
+
     background-repeat: no-repeat;
-    
+
     z-index: -2;
-    
+
 }
 
 .authors-section::after {
@@ -545,9 +684,9 @@ h6 {
     left: 0;
     width: 100%;
     height: 100%;
-    
+
     z-index: -1;
-    
+
 }
 
 .authors-section h3,
@@ -579,37 +718,18 @@ h6 {
 
 .btn-unique:hover {
     /* background-color: #316a2e; */
-    background-color: #73EACB;
+    background-color: #1f6653;
 }
-
-.btn-unique {
-    color: #fff;
-    padding: 4px, 20px, 4px, 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    text-transform: uppercase;
-    cursor: pointer;
-    text-decoration: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-.btn-unique:hover {
-    background-color: #5bc1a9;
-    /* Darker shade for hover */
-    color: #ffffff;
-    /* Ensuring the text color remains white */
-}
-
-
 
 /* Footer */
 .footer {
     background-color: #333;
     color: #fff;
     padding: 60px 50px;
-    width: 100vw; /* Use viewport width */
-    box-sizing: border-box; /* Include padding and border in the width calculation */
+    width: 100vw;
+    /* Use viewport width */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
 }
 
 .footer-section {
@@ -658,6 +778,12 @@ h6 {
     padding: 5px;
     height: 40px;
     margin-bottom: -20px;
+}
+
+.dev {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
 }
 
 
@@ -731,9 +857,20 @@ h6 {
         background-color: #333;
         color: #fff;
         padding: 60px 50px;
-        width: 111vw; /* Use viewport width */
-        box-sizing: border-box; /* Include padding and border in the width calculation */
+        width: 111vw;
+        /* Use viewport width */
+        box-sizing: border-box;
+        /* Include padding and border in the width calculation */
+        margin-bottom: 0;
     }
+
+
+    .dev {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
 }
 
 @media (max-width: 575px) {
@@ -768,7 +905,9 @@ h6 {
     .about-us .col-md-3 {
         width: 80%;
         padding: 0;
+        align-items: center;
         margin-bottom: 2rem;
+        margin-left: 1rem;
     }
 
     .about-us .row {
@@ -803,13 +942,21 @@ h6 {
     }
 
     .call-for-papers {
-        width: 114%;
+        width: 100%;
         padding: 2rem;
     }
 
     #scope {
         width: 100%;
         padding: 1rem;
+
+    }
+
+    #about-us,
+    #blder {
+        font-weight: bolder;
+        padding-top: 0;
+        padding-bottom: 2rem;
     }
 
     .HR .box,
@@ -825,26 +972,47 @@ h6 {
 
     .advisory-board,
     .notable-speakers,
-    .authors-section {
+    .authors-section, .Patrons-speakers {
         width: 100%;
     }
 
     .notable-speakers {
         /* margin-left: -2rem; */
     }
+
     .footer {
         background-color: #333;
         color: #fff;
         padding: 60px 50px;
-        width: 101vw; /* Use viewport width */
-        box-sizing: border-box; /* Include padding and border in the width calculation */
+        width: 100vw;
+        /* Use viewport width */
+        box-sizing: border-box;
+        /* Include padding and border in the width calculation */
     }
+
     .footer .footer-section p #adr {
         padding-left: 0px;
     }
 
-    .footer-maintained{
-        width: 101vw;
+    .footer-maintained {
+        background-color: #484444;
+        color: #ffffff;
+        text-align: center;
+        padding: 5px;
+        height: 40px;
+        margin-bottom: 0;
+        /* or a smaller value if needed */
+    }
+
+
+    .dev {
+        color: #fff;
+        text-decoration: none;
+        font-weight: bolder;
+    }
+
+    .Patrons{
+        margin-left: 0;
     }
 
 }
