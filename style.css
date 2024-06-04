@@ -420,7 +420,8 @@ h6 {
   }
   
   #last{
-    /* padding-left: 18rem; */
+    width: 100%;
+    padding-left: 18rem;
   }
   .scope-box:hover {
     cursor: pointer;
