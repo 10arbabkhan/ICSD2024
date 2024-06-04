@@ -781,17 +781,111 @@ h6 {
     padding: 5px;
     height: 40px;
     margin-bottom: -20px;
+    font-size: 12px;
 }
 
 .dev {
     color: #fff;
     text-decoration: none;
-    font-weight: bolder;
+    font-size: 12px;
 }
 
 
 /* Media Queries */
-@media (max-width: 1271px) {
+@media(min-width: 1200px) {
+        
+.qrCode,
+.accDet {
+    padding: 1rem;
+}
+
+#zero {
+    color: red;
+}
+
+.registration-details .accDet {
+    /* Child objects in a smart layout frame */
+    position: static;
+    left: 0px;
+    top: 0px;
+    width: 463px;
+    height: 308px;
+    border-radius: 16px;
+    opacity: 1;
+
+    /* Smart layout */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 32px;
+    gap: 40px;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(60px);
+    z-index: 0;
+}
+
+.registration-details .qrCode {
+    /* Child objects in a smart layout frame */
+    position: static;
+    left: 655px;
+    top: 0px;
+    width: 292px;
+    height: 308px;
+    border-radius: 16px;
+    opacity: 1;
+    margin-left: 67px;
+    /* Smart layout */
+    display: flex;
+    flex-direction: row;
+    padding: 38px 56px;
+
+    background: rgba(255, 255, 255, 0.5);
+
+    backdrop-filter: blur(60px);
+
+    z-index: 1;
+}
+
+.registration-details .qrCode .img-fluid {
+    width: 180px;
+    height: 180px;
+}
+
+.registerClick {
+    /* Child objects in a smart layout frame */
+    position: static;
+    left: 31px;
+    top: 200px;
+    width: 118px;
+    height: 32px;
+    border-radius: 8px;
+    opacity: 1;
+    margin-top: 20px;
+
+    /* Smart layout */
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 4px 20px;
+    gap: 0px 0px;
+    flex-wrap: wrap;
+    align-content: center;
+
+    background: #FFFFFF;
+
+    z-index: 1;
+}
+
+.txtCP {
+    width: 80%;
+}
+
+
+}
+
+
+@media (max-width: 1200px) {
 
     .navbar-brand,
     .hero-text {
@@ -860,7 +954,7 @@ h6 {
         background-color: #333;
         color: #fff;
         padding: 60px 50px;
-        width: 111vw;
+        width: 100vw;
         /* Use viewport width */
         box-sizing: border-box;
         /* Include padding and border in the width calculation */
@@ -996,7 +1090,6 @@ h6 {
         padding: 5px;
         height: 40px;
         margin-bottom: 0;
-        /* or a smaller value if needed */
     }
 
 
@@ -1009,4 +1102,6 @@ h6 {
     .Patrons{
         margin-left: 0;
     }
+
+
 }
