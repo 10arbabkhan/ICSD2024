@@ -365,7 +365,7 @@ h6 {
 
 /* Scope */
 #scope-section {
-    padding-bottom: 3rem;
+    padding-bottom: 5rem;
   }
   
   .scope-heading {
@@ -419,6 +419,9 @@ h6 {
     padding: 0.5rem;
   }
   
+  #last{
+    /* padding-left: 18rem; */
+  }
   .scope-box:hover {
     cursor: pointer;
     background-color: #73EACB;
@@ -485,9 +488,14 @@ h6 {
 }
 
 /* Committe members */
+/* .committee::after{
+        content: "Co-Convenors";
+        font-size: x-small;
+    } */
+
 .committee-members {
     display: grid;
-    grid-template-columns: repeat(4, minmax(210px, 1fr));
+    grid-template-columns: repeat(3, minmax(210px, 1fr));
     grid-gap: 1rem;
     justify-content: center;
   }
@@ -881,6 +889,23 @@ h6 {
     width: 80%;
 }
 
+.footer {
+    background-color: #333;
+    color: #fff;
+    padding: 60px 50px;
+    width: 100vw;
+    /* Use viewport width */
+    box-sizing: border-box;
+    /* Include padding and border in the width calculation */
+    margin-bottom: 0;
+}
+
+
+.dev {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
 
 }
 
